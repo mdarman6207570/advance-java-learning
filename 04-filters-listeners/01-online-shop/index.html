@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>index page</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        text-align: center;
+        background: white;
+        padding: 40px 60px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 200px;
+        padding: 12px;
+        margin: 10px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .admin {
+        background-color: #ff7b00;
+    }
+
+    .customer {
+        background-color: #0078ff;
+    }
+
+    .btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+        margin-top: 20px;
+        color: #555;
+        font-size: 14px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Login Page</h1>
+        <a href="admin.html" class="btn admin">Admin Login</a><br>
+        <a href="customer.html" class="btn customer">Customer Login</a>
+        <footer>© 2025 Your Company | All Rights Reserved</footer>
+    </div>
+
+<script>
+    // Optional: Simple animation when clicking the buttons
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.target.style.transform = 'scale(0.95)';
+            setTimeout(() => e.target.style.transform = 'scale(1)', 150);
+        });
+    });
+</script>
+</body>
+</html>
