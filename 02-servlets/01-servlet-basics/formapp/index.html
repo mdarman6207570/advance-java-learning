@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Input Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+
+  .main-box {
+    width: 420px;
+    margin: 40px auto;
+    border: 2px solid black;
+    padding: 20px;
+  }
+
+  .section {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .login-section {
+    border-color: green;
+  }
+
+  .product-section {
+    border-color: dodgerblue;
+  }
+
+  label {
+    display: inline-block;
+    width: 130px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="number"] {
+    width: 200px;
+    padding: 4px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #ddd;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="main-box">
+    <form action="productform" method="post">
+
+      <div class="section login-section">
+        <label for="uname">User Name:</label>
+        <input type="text" id="uname" name="uname" placeholder="Enter User Name"><br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Enter Password"><br>
+
+        <input type="submit" value="submit">
+      </div>
+
+      <div class="section product-section">
+        <label for="pname">Product Name:</label>
+        <input type="text" id="pname" name="pname" placeholder="Enter Product Name"><br>
+
+        <label for="pid">Product Id:</label>
+        <input type="number" id="pid" name="pid" placeholder="Enter Product ID"><br>
+
+        <label for="pqty">Product Quantity:</label>
+        <input type="number" id="pqty" name="pqty" placeholder="Enter Quantity"><br>
+
+        <label for="pprice">Product Price:</label>
+        <input type="number" id="pprice" name="pprice" placeholder="Enter Price"><br>
+
+        <input type="submit" value="Get Data">
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
