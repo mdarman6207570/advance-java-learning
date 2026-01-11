@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete User</title>
+  <style>
+    body {
+      background: #fff3cd;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+    input {
+      margin: 8px 0;
+      padding: 8px;
+      width: 250px;
+    }
+    button {
+      margin-top: 10px;
+      background: #dc3545;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form action="delete" method="post">
+    <h2>Delete User by ID</h2>
+    <input type="number" name="pid" placeholder="Person ID" required><br>
+    <button type="submit">Delete</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Users</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('code-bg.jpg'); /* Optional: you can use any code-like background */
+      background-size: cover;
+      background-position: center;
+    }
+    .content {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px 60px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+      margin-bottom: 25px;
+      color: #333;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h2>Click to Get User Details</h2>
+    <form action="select" method="post">
+      <button type="submit">Click Here</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Train Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #56ccf2, #2f80ed);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #2f80ed;
+            margin-bottom: 20px;
+        }
+        input, select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            background-color: #2f80ed;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #155fb2;
+        }
+    </style>
+</head>
+<body>
+    <form action="booking" method="post">
+        <h2>Train Ticket Booking</h2>
+
+        <label>Passenger Name:</label>
+        <input type="text" name="pname" required>
+
+        <label>Phone Number:</label>
+        <input type="text" name="phone" required>
+
+        <label>Number of Passengers:</label>
+        <input type="number" name="num" required>
+
+        <label>Class Type:</label>
+        <select name="classType" required>
+            <option value="General">General - ₹100</option>
+            <option value="Sleeper">Sleeper - ₹500</option>
+            <option value="3rdAC">3rd AC - ₹1500</option>
+            <option value="2ndAC">2nd AC - ₹2000</option>
+            <option value="1stAC">1st AC - ₹4000</option>
+        </select>
+
+        <button type="submit">Book Ticket</button>
+    </form>
+</body>
+</html>
